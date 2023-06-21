@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./result.html" method="get">
+
+        <fieldset>
+            <legend>풋살장 동호회 가입 양식</legend>
+            <div>
+                <label for="username">이름:</label>
+                <input type="text" name="username" placeholder="홍길동" autocomplete="on" required>
+            </div>
+
+            <div>
+                <label for="phone">전화번호:</label>
+                <input type="tel" name="phone" placeholder="010-0000-0000" required>
+            </div>
+
+            <div>
+                <label for="age">나이:</label>
+                <input type="number" name="age" min="0" max="100" step="1" placeholder="20">
+            </div>
+
+            <div>
+                <label for="summary">가입 당부 사항:</label>
+            </div>
+            <div>
+                <textarea name="summary" cols="10" rows="20" placeholder="내용 입력"></textarea>
+            </div>
+
+            <div>
+                 <br>
+                포지션
+                <select name="type">
+                    <option value="T_AS_1">공격수</option>
+                    <option value="T_AS_2">미드필더</option>
+                    <option value="T_AS_3">수비수</option>
+                    <option value="T_AS_4">골키퍼</option>
+                </select>
+            </div>
+
+            <div>
+                <br>
+                주 참여 가능 일 수 <br>
+                <input type="radio" name="type_2" value="1day">
+                <label for="type_2_1">1일</label>
+
+                <input type="radio" name="type_2" value="2day">
+                <label for="type_2_2">2일</label>
+
+                <input type="radio" name="type_2" value="3day">
+                <label for="type_2_3">3일</label>
+            </div>
+
+            
+
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
